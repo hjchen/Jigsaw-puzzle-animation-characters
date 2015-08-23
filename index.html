@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background: #000034;
+        }
+    </style>
+</head>
+<body>
+<svg version="1.1" class="svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet" viewBox="0 0 550 250">
+    <g id="wrap-person">
+        <g id="person">
+            <polygon points="275.69,69.9 	295.59,50 		315.49,69.9 	295.59,89.8" style="fill:#dddddd" id="person1"></polygon>
+            <polygon points="255.78,89.8 	295.59,129.61 	335.39,89.8" style="fill:#38bab1" id="person2"></polygon>
+            <polygon points="275.26,109.23 	235.45,149.04 	315.06,149.04" style="fill:#38bab1" id="person3"></polygon>
+            <polygon points="247.11,149.04 	275.25,149.04 	247.11,177.18 	218.96,177.18" style="fill:#dddddd" id="person4"></polygon>
+            <polygon points="275.25,149.04 	315.06,149.04 	315.06,188.84" style="fill:#dddddd" id="person5"></polygon>
+            <polygon points="200,167.94 	200,196.09 		228.15,167.94" style="fill:#38bab1" id="person6"></polygon>
+            <polygon points="304.6,178.36 	304.6,206.51 	332.74,206.51" style="fill:#38bab1" id="person7"></polygon>
+        </g>
+    </g>
+</svg>
+<script src='jquery-2.1.4.js'></script>
+<script src="DrawSVGPlugin.min.js"></script>
+<script src="TweenMax.min.js"></script>
+<script src="velocity.min.js"></script>
+<script type="text/javascript">
+    var $person1 = $('#person1'),
+            $person2 = $('#person2'),
+            $person3 = $('#person3'),
+            $person4 = $('#person4'),
+            $person5 = $('#person5'),
+            $person6 = $('#person6'),
+            $person7 = $('#person7'),
+            $person = $('#person'),
+            $wrap_person = $('#wrap-person');
+
+
+
+
+        $wrap_person.velocity({
+            translateY: '100%',
+            translateX: '100%',
+            scaleX: '0',
+            scaleY: '0'
+        }, {
+            duration: 0
+        });
+
+
+
+        $wrap_person.velocity({
+            translateY: '0%',
+            translateX: '0%',
+            scaleX: '1',
+            scaleY: '1'
+        }, {
+            duration: 2000
+        });
+
+        $person1.velocity({
+            translateX: '100%',
+            scaleX: '20%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person2.velocity({
+            translateX: '-80%',
+            scaleX: '20%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person3.velocity({
+            translateX: '100%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person4.velocity({
+            translateX: '100%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person5.velocity({
+            translateX: '-100%',
+            scaleX: '20%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person6.velocity({
+            translateX: '-80%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+        $person7.velocity({
+            translateX: '-100%',
+            scaleY: '10%'
+        }, {
+            duration: 1000
+        }).velocity("reverse");
+
+
+</script>
+</body>
+</html>

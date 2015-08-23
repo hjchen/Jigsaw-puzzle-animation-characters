@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src='jquery-2.1.4.js'></script>
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="CSSPlugin.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<svg version="1.1" class="svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet" viewBox="0 0 550 250">
+
+
+            <polygon points="275.69,69.9 	295.59,50 		315.49,69.9 	295.59,89.8" style="fill:#dddddd" id="person1"></polygon>
+            <polygon points="255.78,89.8 	295.59,129.61 	335.39,89.8" style="fill:#38bab1" id="person2"></polygon>
+            <polygon points="275.26,109.23 	235.45,149.04 	315.06,149.04" style="fill:#38bab1" id="person3"></polygon>
+            <polygon points="247.11,149.04 	275.25,149.04 	247.11,177.18 	218.96,177.18" style="fill:#dddddd" id="person4"></polygon>
+            <polygon points="275.25,149.04 	315.06,149.04 	315.06,188.84" style="fill:#dddddd" id="person5"></polygon>
+            <polygon points="200,167.94 	200,196.09 		228.15,167.94" style="fill:#38bab1" id="person6"></polygon>
+            <polygon points="304.6,178.36 	304.6,206.51 	332.74,206.51" style="fill:#38bab1" id="person7"></polygon>
+
+</svg>
+
+
+
+<script type="text/javascript">
+
+
+    var t1 = new TimelineMax();
+    t1.add(TweenMax.to($("#person1"),1,{x:100}));
+    t1.add(TweenMax.to($("#person2"),1,{y:100,delay:-1}));
+    t1.play();
+
+</script>
+</body>
+</html>
